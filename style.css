@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Montserrat:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #075B70 0%,
+        #009DB5 35%,
+        #8AD5DF 70%,
+        #D6F0F2 100%
+    );
+
+    background-attachment: fixed;
+    color: #075B70;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1rem;
+	font-weight: 500
+    line-height: 1.7;
+    margin: 0;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border: 2px solid #e0eeee;
+    box-shadow: 0 8px 20px rgba(0, 45, 45, 0.12);
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: #8AD5DF;
+    border-radius: 10px;
+    margin: 8px auto 0;
+}
+
+header {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 2.5rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d5eeee;
+}
+
+.header-text {
+    text-align: center;
+}
+
+h1 {
+    color: #075B70;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+	font-weight: 800;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 0.5rem;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border: 2px solid #e0eeee;
+}
+
+h2 {
+    color: #075B70;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+	font-weight: 800;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.lse-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 15px;
+    border: 3px solid #d5eeee;
+}
+
+a {
+    color: #075B70;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem 0.75rem;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
